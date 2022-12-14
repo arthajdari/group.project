@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://kit.fontawesome.com/91c3ae4de4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="browseClassesStyle.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"/>
+    <title>Browse Classes</title>
+    
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="landingpage.html" class="navbar-logo"><img src="logo_white.svg" alt="logo" /></a>
+        <ul class="navbar-list">
+          <li><a href="login.html" class="navbar-button">Log In</a></li>
+          <li><a href="browseClasses.html" class="navbar-button">Browse Classes</a></li>
+          <li><a href="index.html" class="navbar-button">About Us</a></li>
+          <li><a href="signupform.html" class="navbar-button">Sign Up</a></li>
+        </ul>
+        <div id="menuToggle">
+          <input type="checkbox"/>
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a href="landingpage.html"><li>Home</li></a>
+            <a href="login.html"><li>Log In</li></a>
+            <a href="browseClasses.html"><li>Browse Classes</li></a>
+            <a href="index.html"><li>About Us</li></a>
+            <a href="signupform.html"><li>Sign Up</li></a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="main-header">
+          <div class="main-title">
+            <p class="title">Browse Classes</p>
+            <p class="quote">Enrich your mind</p>
+          </div>
+          <div class="main-search">
+              <div class="search">
+                <input id="userSearch" class="search-input" type="text" placeholder="Programming, Design, CV.."></input>
+                <button id="searchBtn">  <i class="fas fa-search"></i></button>
+              </div> 
+              <div class="filter">
+                <button class="navbar-button" id="projectsBtn">Projects</button>
+                <button class="navbar-button" id="tutorialsBtn">Tutorials</button>
+                <button class="navbar-button" id="blogsBtn">Blogs</button>
+                <button class="navbar-button" id="allBtn">All</button>
+              </div>
+            </div>
+          </div>     
+        <div class="classes">
+          <div class="row" id="main-content">
+            <script src="filter.js"></script>
+            <script src="searchFilter.js"></script>
+          </div>
+        </div>
+    </main>
+    <footer>
+      <p class="footer-text">Copyright © 2022, Group Space, ART HAJDARI & RIGON DALIPI</p>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="signup.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet"> 
+  <title>Sign Up</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="landingpage.html" class="navbar-logo"><img src="logo_white.svg" alt="logo" /></a>
+      <ul class="navbar-list">
+        <li><a href="login.html" class="navbar-button">Log In</a></li>
+        <li><a href="browseClasses.html" class="navbar-button">Browse Classes</a></li>
+        <li><a href="index.html" class="navbar-button">About Us</a></li>
+        <li><a href="signupform.html" class="navbar-button">Sign Up</a></li>
+      </ul>
+      <div id="menuToggle">
+        <input type="checkbox"/>
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          <a href="landingpage.html"><li>Home</li></a>
+          <a href="login.html"><li>Log In</li></a>
+          <a href="browseClasses.html"><li>Browse Classes</li></a>
+          <a href="index.html"><li>About Us</li></a>
+          <a href="signupform.html"><li>Sign Up</li></a>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <section class="signup">
+        <div class="signup-form_title">
+          <img src="logo_color.svg" alt="logo">
+          <h1>Grow your network</h1>
+        </div>
+        <form>
+          <label for="fname" class="form-label">First Name</label></br>
+          <input type="text" name="fname" class="form-area" placeholder="John"><br>
+          <label for="lname" class="form-label">Last Name</label></br>
+          <input type="text" name="lname" class="form-area" placeholder="Doe"><br>
+          <label for="email" class="form-label">Email Address</label></br>
+          <input type="text" name="email" class="form-area" placeholder="email@example.com"><br>
+          <label for="confirmemail" class="form-label">Confirm Email Address</label></br>
+          <input type="text" name="confirmemail" class="form-area"><br>
+          <label for="password" class="form-label">Passowrd</label></br>
+          <input type="password" name="password" class="form-area"><br>
+          <label for="confirmpassword" class="form-label">Confirm Passowrd</label></br>
+          <input type="password" name="confirmpassword" class="form-area"><br>
+        </form>
+        <div class="form-buttons">
+          <a href="accregistration.html" class="login-link" class="login-button">Create Account</a>
+          <a href="login.html" class="login-link">Log In Instead</a>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <p class="footer-text">Copyright © 2022, Group Space, ART HAJDARI & RIGON DALIPI</p>
+  </footer>
+</body>
+</html>

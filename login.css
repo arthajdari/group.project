@@ -1,0 +1,361 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+	font-family: "Montserrat", sans-serif;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+nav {
+	border-bottom-left-radius: 70px;
+	border-bottom-right-radius: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0F4C75;
+}
+
+nav img {
+	height: 90px;
+	width: auto;
+}
+
+.navbar-logo {
+	padding: 10px;
+}
+
+nav ul {
+	display: flex;
+}
+
+.navbar-button {
+	/* offset-x | offset-y | blur-radius | spread-radius | color */
+	box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.3);
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    box-sizing: border-box;
+    border-radius: 8px;
+    line-height: 40px;
+    font-size: 15px;
+    width: 132px;
+	margin-left: 20px;
+	font-style: normal;
+	font-weight: 600;
+}
+
+.navbar-button:hover{
+	background-color: #0e5585;
+	color: white;
+}
+
+.margjina-5 {
+    margin-right: 3rem;
+    margin-left: 3rem;
+}
+
+.navbar-button:focus {
+	outline: none;
+	background: #0e5585;
+	color: white;
+}
+
+.container {
+	margin: auto;
+	max-width: 1340px;
+	height: 100vh;
+	padding-left: 30px;
+	padding-right: 30px;
+	background: rgba(49, 128, 114, 0.11);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.logo-login{
+	width: 80px;
+	height: 130px;
+	margin-left: 100px;
+}
+
+.img-fluid{
+	margin-top: 20%;
+	margin-left: -8%;
+
+}
+
+.sign{
+	font-size: 24px;
+}
+
+.log-in{
+	margin-top: 7%;
+}
+
+.btn1{
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 100%;
+    background-color:#0F4C75 ;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.btn1:hover{
+    border:2px solid #0F4C75;
+    background: white;
+    color:#0F4C75
+}
+
+.btn1:focus{
+    border:2px solid #0F4C75;
+    background: white;
+    color:#0F4C75
+}
+
+
+/* FOOTER */
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 70px;
+	background: #0F4C75;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+}
+
+.footer-text {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 18px;
+	text-align: center;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* HAMBURGER */
+
+#menuToggle {
+	display: none;
+	position: relative;
+	top: 3px;
+	left: -27px;
+	z-index: 1;
+	-webkit-user-select: none;
+	user-select: none;
+  }
+  
+  #menuToggle a {
+	text-decoration: none;
+	color: #232323;
+	
+	transition: color 0.3s ease;
+  }
+  
+  #menuToggle a:hover {
+	color: tomato;
+  }
+
+  .test {
+	height: 80vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  #menuToggle input {
+	display: block;
+	width: 40px;
+	height: 32px;
+	position: absolute;
+	top: -7px;
+	left: -5px;
+	
+	cursor: pointer;
+	
+	opacity: 0;
+	z-index: 2;
+	
+	-webkit-touch-callout: none;
+  }
+  #menuToggle span {
+	display: block;
+	width: 33px;
+	height: 4px;
+	margin-bottom: 5px;
+	position: relative;
+	
+	background: #cdcdcd;
+	border-radius: 3px;
+	
+	z-index: 1;
+	
+	transform-origin: 4px 0px;
+	
+	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+				background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+				opacity 0.55s ease;
+  }
+  #menuToggle span:first-child {
+	transform-origin: 0% 0%;
+  }
+  
+  #menuToggle span:nth-last-child(2) {
+	transform-origin: 0% 100%;
+  }
+  #menuToggle input:checked ~ span {
+	opacity: 1;
+	transform: rotate(45deg) translate(-2px, -1px);
+	background: #232323;
+  }
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+	opacity: 0;
+	transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+	transform: rotate(-45deg) translate(0, -1px);
+  }
+  #menu {
+	  background-color: rgba(15, 76, 117, 0.9);
+	position: absolute;
+	height: 102vh;
+	width: 120vw;
+	margin: -100px 0 0 -150px;
+	padding: 50px;
+	padding-top: 125px;
+	list-style-type: none;
+	-webkit-font-smoothing: antialiased;
+	transform-origin: 0% 0%;
+	transform: translate(-100%, 0);
+	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+  }
+  
+  #menu li
+  {
+	padding: 10px 0;
+	font-size: 32px;
+	color: white;
+  }
+  #menuToggle input:checked ~ ul
+  {
+	transform: none;
+  }
+
+  @media (min-width:769px) and (max-width: 1100px) {
+	  .container {
+		height: 125vh;
+	  } .img-fluid {
+		  margin-left: 0;
+	  } 
+  }
+
+  @media (max-width: 768px) {
+
+
+	  .test {
+		  flex-direction: column;
+		  height: auto;
+	  }
+	.img-fluid {
+		margin-left: 0;
+	} 
+	.margjina-5 {
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.about-us-section_list li {
+		margin-left: 0;
+	}
+	.navbar-list {
+		display: none;
+	} nav {
+		display: flex;
+		flex-direction: row-reverse;
+	} #menuToggle {
+		display: block;
+	} .roles-list p {
+		margin-top: 0;
+	} .roles-list {
+		padding-bottom: 70px;
+		margin-bottom: 0;
+		flex-direction: column;
+		align-items: center;
+	} .roles-list a:not(:first-of-type) {
+		padding-top: 30px;
+	}
+ header {
+		background: #0F4C75;
+	}
+	.col-lg-7 {
+		width: 100%;
+		margin-left: 0;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.test {
+		flex-direction: column;
+		height: auto;
+	}
+}
